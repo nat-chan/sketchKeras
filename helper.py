@@ -111,7 +111,7 @@ def show_active_img_and_save(name,img,path):
     mat[mat < 0] = 0
     mat[mat > 255] = 255
     mat=mat.astype(np.uint8)
-    cv2.imshow(name,mat)
+#    cv2.imshow(name,mat)
     cv2.imwrite(path,mat)
     return
 
@@ -126,7 +126,7 @@ def show_active_img_and_save_denoise(name,img,path):
     mat[mat > 255] = 255
     mat=mat.astype(np.uint8)
     mat = ndimage.median_filter(mat, 1)
-    cv2.imshow(name,mat)
+#    cv2.imshow(name,mat)
     cv2.imwrite(path,mat)
     return
 
@@ -139,7 +139,7 @@ def show_active_img_and_save_denoise_filter(name,img,path):
     mat[mat > 255] = 255
     mat=mat.astype(np.uint8)
     mat = ndimage.median_filter(mat, 1)
-    cv2.imshow(name,mat)
+#    cv2.imshow(name,mat)
     cv2.imwrite(path,mat)
     return
 
@@ -152,7 +152,7 @@ def show_active_img_and_save_denoise_filter2(name,img,path):
     mat[mat > 255] = 255
     mat=mat.astype(np.uint8)
     mat = ndimage.median_filter(mat, 1)
-    cv2.imshow(name,mat)
+#    cv2.imshow(name,mat)
     cv2.imwrite(path,mat)
     return
 
